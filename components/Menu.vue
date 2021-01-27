@@ -4,7 +4,7 @@
   >
     <li class="flex-grow mr-3 lg:mr-4 mb-1 lg:mb-0 text-center">
       <NuxtLink
-        to="/dataengineer"
+        to="/blog/tag/data"
         class="active--exact active lg:text-base hover:text-primary text-primary font-bold text-xl"
         ><span
           ><font style="vertical-align: inherit"
@@ -15,7 +15,7 @@
     </li>
     <li class="flex-grow mr-3 lg:mr-4 mb-1 lg:mb-0 text-center">
       <NuxtLink
-        to="/blockchain"
+        to="/blog/tag/blockchain"
         class="active--exact active lg:text-base hover:text-primary text-primary font-bold text-xl"
         ><span
           ><font style="vertical-align: inherit"
@@ -26,7 +26,7 @@
     </li>
     <li class="flex-grow mr-3 lg:mr-4 mb-1 lg:mb-0 text-center">
       <NuxtLink
-        to="/line"
+        to="/blog/tag/bot"
         class="active--exact active lg:text-base hover:text-primary text-primary font-bold text-xl"
         ><span
           ><font style="vertical-align: inherit"

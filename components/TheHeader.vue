@@ -10,16 +10,5 @@
     </NuxtLink>
     <AppSearchInput class="place-self-center md:ml-4 mb-3 lg:mb-0" />
     <Menu class="ml-4 mb-3 lg:mb-0" />
-    <GithubButton class="place-self-center" href="https://github.com/methuz"
-      >Follow @methuz</GithubButton
-    >
   </header>
 </template>
-<script>
-import GithubButton from 'vue-github-button'
-export default {
-  components: {
-    GithubButton
-  }
-}
-</script>

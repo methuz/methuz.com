@@ -1,18 +1,17 @@
 ---
-title: My Third Blog Post
+title: My blockchain journey
 description: Learning how to use @nuxt/content to create a blog
-img: https://images.unsplash.com/photo-1588010986054-727675e6f36a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60
-alt: my third blog post
+img: https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
+alt: my first blog post
 author: 
-  name: Alexandra
-  bio: All about Alexandra and where she works and what she does
-  img: https://images.unsplash.com/photo-1506956191951-7a88da4435e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60
+  name: Peter
+  bio: All about Peter and what he does and where he works
+  img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
 tags: 
-  - javascript
-  - web development
+  - blockchain
 ---
 
-## Welcome to my third blog post using content module
+Welcome to my first blog post using content module
 
 ## This is a heading
 This is some more info
