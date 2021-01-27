@@ -10,15 +10,14 @@
       />
       <div class="overlay"></div>
       <div class="absolute top-32 left-32 text-white">
-        <NuxtLink to="/"><Logo /></NuxtLink>
-        <div class="mt-16 -mb-3 flex uppercase text-sm">
-          <p class="mr-3">
+        <div class="mt-16 mb-3 flex uppercase text-sm">
+          <p class="font-bold mr-3">
             {{ formatDate(article.updatedAt) }}
           </p>
-          <span class="mr-3">•</span>
+          <span class="font-bold mr-3">•</span>
           <p>{{ article.author.name }}</p>
         </div>
-        <h1 class="text-6xl font-bold">{{ article.title }}</h1>
+        <!--<h1 class="text-6xl font-bold">{{ article.title }}</h1>-->
         <span v-for="(tag, id) in article.tags" :key="id">
           <NuxtLink :to="`/blog/tag/${tags[tag].slug}`">
             <span
@@ -28,21 +27,6 @@
             </span>
           </NuxtLink>
         </span>
-      </div>
-      <div class="flex absolute top-3rem right-3rem">
-        <NuxtLink
-          to="/"
-          class="mr-8 self-center text-white font-bold hover:underline"
-        >
-          All articles
-        </NuxtLink>
-        <a
-          href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content"
-          class="mr-8 self-center text-white font-bold hover:underline"
-        >
-          Tutorial
-        </a>
-        <AppSearchInput />
       </div>
     </div>
     <div
