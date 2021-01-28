@@ -9,7 +9,10 @@
         class="absolute h-full w-full object-cover"
       />
       <div class="overlay"></div>
-      <div class="absolute top-32 right-32 text-white">
+      <div class="fixed bottom-32 right-32 text-white z-50">
+        <NuxtLink to="/"><PageLogo /></NuxtLink>
+      </div>
+      <div class="absolute bottom-32 right-32 text-white">
         <div class="mt-16 mb-3 flex uppercase text-sm">
           <p class="font-mono font-bold mr-3">
             {{ formatDate(article.updatedAt) }}

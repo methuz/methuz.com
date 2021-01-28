@@ -10,6 +10,9 @@
       />
     </div>
 
+    <div class="absolute w-16 h-16 z-50 bottom-32 right-32 text-white">
+      <NuxtLink to="/"><PageLogo /></NuxtLink>
+    </div>
     <div class="overlay"></div>
     <div class="absolute top-32 left-32 text-white">
       <div class="mt-16 -mb-3 flex flex-col uppercase text-sm">
