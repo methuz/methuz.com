@@ -5,34 +5,22 @@
     <li class="flex-grow mr-3 lg:mr-4 mb-1 lg:mb-0 text-center">
       <NuxtLink
         to="/blog/tag/data"
-        class="active--exact active lg:text-base hover:text-primary text-primary font-bold text-xl"
-        ><span
-          ><font style="vertical-align: inherit"
-            ><font style="vertical-align: inherit">Data</font></font
-          ></span
-        ></NuxtLink
+        class="active--exact active hover:text-primary text-primary font-bold text-xl"
+        ><span> Data </span></NuxtLink
       >
     </li>
     <li class="flex-grow mr-3 lg:mr-4 mb-1 lg:mb-0 text-center">
       <NuxtLink
         to="/blog/tag/blockchain"
-        class="active--exact active lg:text-base hover:text-primary text-primary font-bold text-xl"
-        ><span
-          ><font style="vertical-align: inherit"
-            ><font style="vertical-align: inherit">Blockchain</font></font
-          ></span
-        ></NuxtLink
+        class="active--exact active hover:text-primary text-primary font-bold text-xl"
+        ><span>Blockchain</span></NuxtLink
       >
     </li>
     <li class="flex-grow mr-3 lg:mr-4 mb-1 lg:mb-0 text-center">
       <NuxtLink
         to="/blog/tag/bot"
-        class="active--exact active lg:text-base hover:text-primary text-primary font-bold text-xl"
-        ><span
-          ><font style="vertical-align: inherit"
-            ><font style="vertical-align: inherit">Bot</font></font
-          ></span
-        ></NuxtLink
+        class="active--exact active hover:text-primary text-primary font-bold text-xl"
+        ><span>Bot</span></NuxtLink
       >
     </li>
   </ul>

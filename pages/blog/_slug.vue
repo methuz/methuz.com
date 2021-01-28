@@ -9,19 +9,19 @@
         class="absolute h-full w-full object-cover"
       />
       <div class="overlay"></div>
-      <div class="absolute top-32 left-32 text-white">
+      <div class="absolute top-32 right-32 text-white">
         <div class="mt-16 mb-3 flex uppercase text-sm">
-          <p class="font-bold mr-3">
+          <p class="font-mono font-bold mr-3">
             {{ formatDate(article.updatedAt) }}
           </p>
-          <span class="font-bold mr-3">•</span>
+          <span class="font-mono font-bold mr-3">•</span>
           <p>{{ article.author.name }}</p>
         </div>
         <!--<h1 class="text-6xl font-bold">{{ article.title }}</h1>-->
         <span v-for="(tag, id) in article.tags" :key="id">
           <NuxtLink :to="`/blog/tag/${tags[tag].slug}`">
             <span
-              class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear"
+              class="font-mono truncate uppercase tracking-wider font-medium text-sm px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear bg-opacity-70 bg-green-600"
             >
               {{ tags[tag].name }}
             </span>
@@ -34,29 +34,9 @@
     >
       <h1 class="font-bold text-4xl">{{ article.title }}</h1>
       <p>{{ article.description }}</p>
-      <p class="pb-4">Post last updated: {{ formatDate(article.updatedAt) }}</p>
-      <!-- table of contents -->
-      <nav class="pb-6">
-        <ul>
-          <li
-            v-for="link of article.toc"
-            :key="link.id"
-            :class="{
-              'font-semibold': link.depth === 2
-            }"
-          >
-            <nuxtLink
-              :to="`#${link.id}`"
-              class="hover:underline"
-              :class="{
-                'py-2': link.depth === 2,
-                'ml-2 pb-2': link.depth === 3
-              }"
-              >{{ link.text }}</nuxtLink
-            >
-          </li>
-        </ul>
-      </nav>
+      <p class="pb-4 italic">
+        Post last updated: {{ formatDate(article.updatedAt) }}
+      </p>
       <!-- content from markdown -->
       <nuxt-content :document="article" />
       <!-- content author component -->
@@ -108,8 +88,6 @@ export default {
   font-size: 22px;
 }
 .icon.icon-link {
-  background-image: url('~assets/svg/icon-hashtag.svg');
-  display: inline-block;
   width: 20px;
   height: 20px;
   background-size: 20px 20px;

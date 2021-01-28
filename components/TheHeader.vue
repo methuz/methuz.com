@@ -3,7 +3,7 @@
     <NuxtLink class="flex flex-col mb-2 lg:mb-0 lg:flex-row items-center" to="/"
       ><Logo class="lg:mr-3 mb-1 lg:mb-0" />
       <p
-        class="text-base text-blue-500 leading-tight font-mono font-bold hover:text-primary active"
+        class="text-xl text-blue-500 leading-tight font-mono font-bold hover:text-primary active"
       >
         @Methuz
       </p>
